@@ -2,7 +2,7 @@
 
   MIT
   
-  ![https://img.shields.io/badge/License-&MIT-blue](https://img.shields.io/badge/License-MIT-blue)
+  ![https://img.shields.io/badge/License-MIT-blue](https://img.shields.io/badge/License-MIT-blue)
 
   ## Description
   
@@ -47,5 +47,5 @@
   
   ## Tests
   
-  I have not yet written tests for this project.
+  I have not yet written tests for this project. 
 
