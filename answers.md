@@ -20,7 +20,7 @@ This project can be installed using Node Package Manager and installing the depe
 Once installed, other developers can simply initialize the app in the command line in the node environment by entering node index in the working directory and answering the prompts with information about their project.
 
 ## What testing would be applicable for this project? (FS)
-I have not yet written tests for this project.  Such test development is welcome.
+I have not yet written tests for this project.  
 
 ## Are there any other developers that need to be credited for contributions on this project? (FS)
 I have written this app on my own, following and modifying examples learned in coding classes.

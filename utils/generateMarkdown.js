@@ -16,7 +16,7 @@ function generateMarkdown(data) {
 
   ${data.license}
   
-  ![https://img.shields.io/badge/License-&${data.license}-blue](https://img.shields.io/badge/License-${data.license}-blue)
+  ![https://img.shields.io/badge/License-${data.license}-blue](https://img.shields.io/badge/License-${data.license}-blue)
 
   ## Description
   
