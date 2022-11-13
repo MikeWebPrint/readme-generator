@@ -14,6 +14,10 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
   return `# ${data.title}
 
+  ${data.license}
+  
+  ![https://img.shields.io/badge/License-&${data.license}-blue](https://img.shields.io/badge/License-${data.license}-blue)
+
   ## Description
   
   ${data.description}
@@ -46,13 +50,6 @@ function generateMarkdown(data) {
   ## License
   
   ${data.license}
-  
-  🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-  
-  ## Badges
-  
-  ![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-  
   
   ## Features
   
