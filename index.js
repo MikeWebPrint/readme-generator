@@ -7,7 +7,7 @@ const generateMarkdown = require('./utils/generateMarkdown')
 const questions = [
   {
     type: 'input',
-    message: 'Answer the follow questions to generate a README.md for your project. Please use complete sentences. \n What is your name?',
+    message: 'Answer the follow questions to generate a README.md for your project. \n Questions indicated by (FS) should be answered in full sentences. \n What is your name?',
     name: 'name',
   },
   {
@@ -22,22 +22,22 @@ const questions = [
   },
   {
     type: 'input',
-    message: 'Please give a brief description of your project',
+    message: 'Please give a brief description of your project. (FS)',
     name: 'description',
   },
   {
     type: 'input',
-    message: 'What features does your project have?',
+    message: 'What features does your project have? (FS)',
     name: 'features',
   },
   {
     type: 'input',
-    message: 'Please provide instructions for installing your project',
+    message: 'Please provide instructions for installing your project. (FS)',
     name: 'installation',
   },
   {
     type: 'input',
-    message: 'How will other developers use this project?',
+    message: 'How will other developers use this project? (FS)',
     name: 'usage',
   },
   {
@@ -48,33 +48,29 @@ const questions = [
   },
   {
     type: 'input',
-    message: 'How can others contribute to your project?',
-    name: 'contributing',
-  },
-  {
-    type: 'input',
-    message: 'What testing would be applicable for this project?',
+    message: 'What testing would be applicable for this project? (FS)',
     name: 'tests',
   },
   {
     type: 'input',
-    message: 'Are there any other developers that need to be credited for contributions on this project?',
+    message: 'Are there any other developers that need to be credited for contributions on this project? (FS)',
     name: 'credits',
   }
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  fs.writeFile(fileName, generateMarkdown(data), (err) =>
+  err ? console.error(err) : console.log('Open your new README file')
+  )
+}
 
 // TODO: Create a function to initialize app
 function init() {
   inquirer.prompt(questions)
   .then((response) => {
-    console.log(response)
-    fs.appendFile('README.md', generateMarkdown(response), (err) =>
-    err ? console.error(err) : console.log('We have your information now!')
-  );
-}
+    writeToFile('README.md', response)
+  }
   );
 }
 // Function call to initialize app

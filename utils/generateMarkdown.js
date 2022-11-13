@@ -20,7 +20,7 @@ function generateMarkdown(data) {
   
   ## Author
   
-  The author for this project is ${data.name}. View GitHub repository here: [https://github.com/${data.name}](https://github.com/${data.name})
+  The author for this project is [${data.name}](https://github.com/${data.gitusername})
   
   ## Table of Contents
   
@@ -28,12 +28,16 @@ function generateMarkdown(data) {
   - [Usage](#usage)
   - [Credits](#credits)
   - [License](#license)
-  - [Contributing](#contributing)
+  - [How to Contribute](#contributions)
   - [Tests](#tests)
   
   ## Installation
   
   ${data.installation}
+  
+  ## Usage
+  
+  ${data.usage}
   
   ## Credits
   
@@ -54,9 +58,9 @@ function generateMarkdown(data) {
   
   ${data.features}
   
-  ## How to Contribute
+  ## Contributions
   
-  ${data.contributing}
+  Contributions to the project can be offered at the repository here: [https://github.com/${data.gitusername}/${data.title}](https://github.com/${data.gitusername}/${data.title})
   
   ## Tests
   
