@@ -2,6 +2,7 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown')
+const renderLicenseBadge = require('./utils/generateMarkdown')
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -44,7 +45,7 @@ const questions = [
     type: 'list',
     message: 'What license do you want to add to your project?',
     name: 'license',
-    choices: ['MIT', 'GNU-AGPLv3', 'GNU-GPLv3', 'GNU-LGPLv3', 'Mozilla-Public-License 2.0', 'Apache-License-2.0', 'Boost-Software-License-1.0', 'The-Unlicense'],
+    choices: ['MIT', 'GNU_AGPLv3', 'GNU_GPLv3', 'GNU_LGPLv3', 'Mozilla_Public_License_2.0', 'Apache_License_2.0', 'Boost_Software_License_1.0', 'The_Unlicense'],
   },
   {
     type: 'input',
@@ -60,6 +61,8 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
+  console.log(data.license)
+  renderLicenseBadge(data.license);
   fs.writeFile(fileName, generateMarkdown(data), (err) =>
   err ? console.error(err) : console.log('Open your new README file')
   )

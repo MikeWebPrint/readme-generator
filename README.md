@@ -1,7 +1,5 @@
 # readme-generator
 
-  MIT
-  
   ![https://img.shields.io/badge/License-MIT-blue](https://img.shields.io/badge/License-MIT-blue)
 
   ## Description
@@ -23,15 +21,15 @@
   
   ## Installation
   
-  This project can be installed using Node Package Manager and installing the dependencies included in the package.json file.
+  This project can be installed using Node Package Manager and installing the dependencies included in the package.json file. 
   
   ## Usage
   
-  Once installed, other developers can simply initialize the app in the command line in the node environment by entering node index in the working directory and answering the prompts with information about their project.
+  Once installed, other developers can simply initialize the app in the command line in the node environment by entering node index in the working directory and answering the prompts with information about their project. View a demonstration of the application here: [https://drive.google.com/file/d/1a8o9mL5KYQEq9ESazU6JEfjQ_wXXMN42/view](https://drive.google.com/file/d/1a8o9mL5KYQEq9ESazU6JEfjQ_wXXMN42/view).
   
   ## Credits
   
-  I have written this app on my own, following and modifying examples learned in coding classes.
+  I have written this app on my own, following and modifying examples learned in coding classes. Badge code was derived from [https://shields.io/](https://shields.io/).
   
   ## License
   

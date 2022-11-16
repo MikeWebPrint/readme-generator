@@ -1,5 +1,3 @@
-## Video of Demonstration
-[https://drive.google.com/file/d/1a8o9mL5KYQEq9ESazU6JEfjQ_wXXMN42/view](https://drive.google.com/file/d/1a8o9mL5KYQEq9ESazU6JEfjQ_wXXMN42/view)
 
 ## What is your name?
 Mike Johnson
@@ -17,13 +15,13 @@ As a web developer, having a professional README file communicates important inf
 This project features a command line interface, driven by the npm package Inquirer (v. 8.2.4).  It captures the user's answers in text and uses template literal syntax to insert those answers into a pre-defined template. The generated .md file includes several notable sections, with a table of contents linking to each section. This tool also generates a badge icon.
 
 ## Please provide instructions for installing your project. (FS)
-This project can be installed using Node Package Manager and installing the dependencies included in the package.json file.
+This project can be installed using Node Package Manager and installing the dependencies included in the package.json file. 
 
 ## How will other developers use this project? (FS)
-Once installed, other developers can simply initialize the app in the command line in the node environment by entering node index in the working directory and answering the prompts with information about their project.
+Once installed, other developers can simply initialize the app in the command line in the node environment by entering node index in the working directory and answering the prompts with information about their project. View a demonstration of the application here: [https://drive.google.com/file/d/1a8o9mL5KYQEq9ESazU6JEfjQ_wXXMN42/view](https://drive.google.com/file/d/1a8o9mL5KYQEq9ESazU6JEfjQ_wXXMN42/view).
 
 ## What testing would be applicable for this project? (FS)
 I have not yet written tests for this project.  
 
 ## Are there any other developers that need to be credited for contributions on this project? (FS)
-I have written this app on my own, following and modifying examples learned in coding classes.
+I have written this app on my own, following and modifying examples learned in coding classes. Badge code was derived from [https://shields.io/](https://shields.io/).
